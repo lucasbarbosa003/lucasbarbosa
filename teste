@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class MeuPrograma {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // 1. Contar números de 1 a 10
+        System.out.println("Números de 1 a 10:");
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(i);
+        }
+
+        System.out.println();
+
+        // 2. Perguntar a idade do usuário
+        System.out.print("Digite sua idade: ");
+        int idade = scanner.nextInt();
+
+        if (idade >= 18) {
+            System.out.println("Você é maior de idade.");
+        } else {
+            System.out.println("Você é menor de idade.");
+        }
+
+        System.out.println();
+
+        // 3. Calcular a soma de números de uma lista
+        int[] numeros = {5, 10, 15, 20}; // você pode mudar os números aqui
+        int soma = 0;
+
+        for (int numero : numeros) {
+            soma += numero;
+        }
+
+        System.out.println("A soma dos números da lista é: " + soma);
+
+        scanner.close();
+    }
+}
